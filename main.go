@@ -36,12 +36,13 @@ func main() {
 	encryptionKey = key
 
 	port := getPort()
+	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	router.GET("/subscription", getSubscription)
 	router.POST("/subscription", postSubscription)
 
 	err = initDB()
-	
+
 	if err != nil {
 		fmt.Println("Error initializing database:", err)
 		return

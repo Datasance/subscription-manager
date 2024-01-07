@@ -1,11 +1,10 @@
-module edatasance/subscription-manager
+module datasance/subscription-manager
 
-go 1.21.5
+go 1.21
 
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-sql-driver/mysql v1.7.1
-	github.com/google/uuid v1.5.0
 )
 
 require (
